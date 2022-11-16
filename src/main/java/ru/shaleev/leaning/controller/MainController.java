@@ -16,6 +16,11 @@ public class MainController {
     private MessageRepo messageRepo;
 
     @GetMapping("/")
+    public String general(Map<String, Object> model) {
+        return "general";
+    }
+
+    @GetMapping("greeting")
     public String greeting(Map<String, Object> model) {
         return "greeting";
     }
