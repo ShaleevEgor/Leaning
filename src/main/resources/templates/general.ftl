@@ -1,10 +1,13 @@
+<#import "parts/security.ftl" as c>
+
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <meta charset="UTF-8"/>
     <title>SPract</title>
     <link href="WEB-INF/views/first/index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+
 <div class="header">
     <a href="#"><div class="logo_text">Shaleev Practical</div></a>
     <a href="/python"><div class="python">Python</div></a>
@@ -12,7 +15,9 @@
     <a href="/c"><div class="c">C++</div></a>
     <a href="/login"><div class="autorization">Autorization</div></a>
     <a href="/registration"><div class="registration">Registration</div></a>
+
 </div>
+
 <div class="main">Good day my young baby-programmers! I gathered all my strength into my little fist and decided to craft a small resource with puzzles for you.
     On this resource you will find tasks aimed at practice and only practice. Here you will get the necessary coding skills,
     necessary so that they give you a dime for this and you do not die of hunger,
@@ -24,6 +29,7 @@
 <div class="footer">
     <div class="author"><a href="https://vk.com/shaleev2" target="_blank">Egor Shaleev</a></div>
 </div>
+
 
 
 
@@ -161,5 +167,6 @@
         text-decoration: white;
     }
 </style>
+
 </body>
 </html>
