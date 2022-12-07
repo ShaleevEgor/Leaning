@@ -18,14 +18,11 @@
 
 </div>
 
-<div class="main">Good day my young baby-programmers! I gathered all my strength into my little fist and decided to craft a small resource with puzzles for you.
-    On this resource you will find tasks aimed at practice and only practice. Here you will get the necessary coding skills,
-    necessary so that they give you a dime for this and you do not die of hunger,
-    but just a reminder to my lazy little asses that the various food chains are always hiring you for the cashier position.
-    I wish you good luck and success on your way, don't be upset if something doesn't work, always look for another way "do not open the door, so climb out the window",
-    no one says that it will be easy and simple. Do not look for easy ways, because these are the ways of losers. If the task does not work out, look at it from the other side,
-    Divide into small puzzles and destroy them one by one! Google has your everything, you just have to find it!<br/>
-    P.S I did the project on my fragile knees, so do not judge strictly, if you have your own ideas, write and we will definitely discuss them!</div>
+<div class="main">Доброго времени суток, мои юные дети-программисты! Я собрал все свои силы в свой маленький кулачок и решил скрафтить для вас небольшой ресурс с головоломками. На этом ресурсе вы найдете задания, направленные на практику и только практику.
+    Здесь вы получите необходимые навыки кодирования, необходимые для того, чтобы вам за это дали ни копейки и вы не померли с голоду, а просто напоминание моим ленивым жопкам, что различные продуктовые сети всегда нанимают вас на должность кассира.
+    Желаю тебе удачи и успехов на твоем пути, не расстраивайся если что-то не получается, всегда ищи другой способ "не открывай дверь, так лезь в окно", никто не говорит, что будет легко и простой. Не ищите легких путей, ведь это пути неудачников.
+    Если задание не получается, посмотрите на него с другой стороны, Разделите на маленькие пазлы и уничтожьте их один за другим! У Google есть все, вам просто нужно найти это!<br>
+    P.S Проект делал на своих хрупких коленках, так что не судите строго, если у вас есть свои идеи, пишите и мы их обязательно обсудим!</div>
 <div class="footer">
     <div class="author"><a href="https://vk.com/shaleev2" target="_blank">Egor Shaleev</a></div>
 </div>
