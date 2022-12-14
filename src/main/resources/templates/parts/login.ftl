@@ -8,7 +8,7 @@
 </#macro>
 
 <#macro logout>
-    <form action="/logout" method="post">
+    <form action="/logout" method="post" class="button">
         <input type="hidden" name="_csrf" value="${_csrf.token}" />
         <input type="submit" value="Sign Out"/>
     </form>
