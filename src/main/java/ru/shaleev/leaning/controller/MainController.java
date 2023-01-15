@@ -10,6 +10,8 @@ public class MainController {
 
     @GetMapping("/")
     public String general(Map<String, Object> model) {
+
         return "general";
     }
 }
+

@@ -1,14 +1,14 @@
 <#include "parts/security.ftl">
 <#import "parts/login.ftl" as l>
+<#import "parts/common.ftl" as c>
 
 <!DOCTYPE html>
 <html lang="ru">
     <meta charset="UTF-8"/>
     <title>SPract</title>
-    <link href="WEB-INF/views/first/index.css" type="text/css" rel="stylesheet">
+
 </head>
 <body>
-
 <div class="header">
     <a href="/"><div class="logo_text">Shaleev Practical</div></a>
     <a href="/python"><div class="python">Python</div></a>
@@ -60,6 +60,7 @@
         font-size: 30px;
         padding: 10px;
     }
+
     .header {
         display: flex;
         background-color: lightseagreen;
@@ -202,6 +203,7 @@
 
     }
 </style>
+
 
 </body>
 </html>
