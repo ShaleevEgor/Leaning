@@ -3,20 +3,19 @@
 <@c.page>
 
     <form method="post">
-        <input type="text" name="title" placeholder="Заголовок задачи">
         <input type="text" name="text" placeholder="Текст задачи" />
         <input type="text" name="tag" placeholder="Ответ">
         <input type="hidden" name="_csrf" value="${_csrf.token}" />
         <button type="submit">Добавить</button>
     </form>
 
-    <#list kataLists as kata>
+    <#list katas as kata>
         <div class="kata-card">
             <div class="kata-text">${kata.text}</div>
-            <div>${kata.authorName}</div>
-            <div>${kata.title}</div>
             <div class="kata-answer">${kata.tag}</div>
         </div>
+        <#else>
+        blank
     </#list>
 </@c.page>
 <style>

@@ -1,6 +1,9 @@
 package ru.shaleev.leaning.domain;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class JavaKata {
@@ -10,19 +13,14 @@ public class JavaKata {
 
     private String text;
     private String tag;
-    private String title;
 
     public JavaKata() {
     }
 
-    public JavaKata(String text, String tag, String title) {
+    public JavaKata(String text, String tag) {
         this.text = text;
         this.tag = tag;
-
-        this.title = title;
     }
-
-
 
     public void setText(String text) {
         this.text = text;
@@ -31,13 +29,6 @@ public class JavaKata {
     public String getText() {
         return text;
     }
-
-
-    public String getTitle() {
-        return title; }
-
-    public void setTitle(String title) {
-        this.title = title; }
 
     public Integer getId() {
         return id;
