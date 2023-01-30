@@ -1,25 +1,38 @@
 package ru.shaleev.leaning.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.*;
+@Transactional
 @Entity
 public class JavaKata {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
-
+    @Column(length = 2048)
     private String text;
+    @Column(length = 2048)
     private String tag;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User author;
 
     public JavaKata() {
     }
 
-    public JavaKata(String text, String tag) {
+    public JavaKata(String text, String tag, User user) {
         this.text = text;
         this.tag = tag;
+        this.author = user;
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
     }
 
     public void setText(String text) {
