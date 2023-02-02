@@ -1,7 +1,9 @@
 <#import "parts/common.ftl" as c>
-
+<#include "parts/security.ftl">
 <@c.page>
+
     <#include "parts/navbar.ftl">
+    <#if user.isAdmin()==true>
     <form method="post">
         <div class="add-task"></div>
             <input class="text-in" type="text" name="text" placeholder="Текст задачи" />
@@ -10,6 +12,7 @@
         </div>
         <button type="submit">Добавить</button>
     </form>
+    </#if>
     <#list katas as kata>
     <div class="task">
         <div class="task_question">${kata.text}</div>
