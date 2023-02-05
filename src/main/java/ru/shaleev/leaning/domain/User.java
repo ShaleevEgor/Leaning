@@ -1,9 +1,11 @@
 package ru.shaleev.leaning.domain;
 
+import org.hibernate.validator.constraints.Length;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 import java.util.Set;
 
@@ -13,7 +15,11 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @NotBlank(message = "Login can't be empty")
+    @Length(min = 3, max = 15, message = "Login 3-15 symbols")
     private String username;
+    @NotBlank(message = "Password can't be empty")
     private String password;
     private boolean active;
 
@@ -55,12 +61,14 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return isActive();
+        return true;
     }
+
 
     public void setUsername(String username) {
         this.username = username;
     }
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -76,7 +84,7 @@ public class User implements UserDetails {
     }
 
     public boolean isActive() {
-        return active;
+        return isActive();
     }
 
     public void setActive(boolean active) {
