@@ -3,7 +3,7 @@
 <@c.page>
 
     <#include "parts/navbar.ftl">
-    <#if user.isAdmin()==true>
+    <#if isAdmin>
         <form method="post">
             <div class="add-task"></div>
             <input class="text-in" type="text" name="text" placeholder="Текст задачи" />
