@@ -14,6 +14,8 @@ public class JavaKata {
     @Column(length = 2048)
     private String tag;
 
+    private String filename;
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User author;
@@ -25,6 +27,14 @@ public class JavaKata {
         this.text = text;
         this.tag = tag;
         this.author = user;
+    }
+
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
     }
 
     public User getAuthor() {

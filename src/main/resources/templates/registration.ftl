@@ -15,7 +15,7 @@
 
     <style>
         body {
-            background-image: url("https://html-templates.info/wp-content/uploads/140520040145.jpg");
+            background-color: bisque;
 
         }
         * {

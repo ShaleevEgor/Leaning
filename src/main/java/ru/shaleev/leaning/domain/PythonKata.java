@@ -14,6 +14,8 @@ public class PythonKata {
     @Column(length = 2048)
     private String tag;
 
+    private String filename;
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User author;
@@ -58,5 +60,13 @@ public class PythonKata {
 
     public void setTag(String tag) {
         this.tag = tag;
+    }
+
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
     }
 }

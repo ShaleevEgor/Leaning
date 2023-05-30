@@ -7,6 +7,5 @@ import java.util.List;
 
 public interface CplusKataRepo extends CrudRepository<CplusKata, Long> {
 
-    List<CplusKata> findByTag(String tag);
-
+     List<CplusKata> findByTag(String tag);
 }

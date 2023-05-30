@@ -1,10 +1,10 @@
 <#include "security.ftl">
 <#import "login.ftl" as l>
 <div class="header">
-<a href="/"><div class="logo_text">Shaleev Practical</div></a>
-<a href="/python"><div class="python">Python</div></a>
-<a href="/java"><div class="java">Java</div></a>
-<a href="/c"><div class="c">C++</div></a>
+<a href="/"><div class="logo_text">Имя магазина</div></a>
+<a href="/python"><div class="python">Компьютеры</div></a>
+<a href="/java"><div class="java">Чайники</div></a>
+<a href="/c"><div class="c">Холодильники</div></a>
 <#if user??><div class="cc"></div></#if>
 
 <#if !user??>
@@ -21,7 +21,7 @@
 <style>
     .button_logout
     {
-        background-color: lightseagreen;
+        background-color: #EDC7B7;
         margin-left: 20px;
         margin-top: 8px;
         border: none;
@@ -32,7 +32,7 @@
 
     .header {
         display: flex;
-        background-color: lightseagreen;
+        background-color: #EDC7B7;
         width: 100%;
         height: 50px;
         border-radius: 3px;
@@ -40,12 +40,13 @@
     }
 
     .cc {
-        background-color: lightseagreen;
+        background-color: #EDC7B7;
         width: 770px;
         margin-top: 3px;
     }
 
     .name {
+        background-color: #EDC7B7;
         width: 150px;
         margin-left: 200px;
         text-align: center;
@@ -100,7 +101,6 @@
         font-style: italic;
         text-decoration: none;
         line-height: 50px;
-        width: 70px;
         text-align: center;
     }
 
@@ -110,7 +110,7 @@
         font-style: italic;
         text-decoration: none;
         line-height: 50px;
-        width: 60px;
+
         text-align: center;
     }
 
@@ -140,7 +140,7 @@
         font-style: italic;
         text-decoration: none;
         line-height: 50px;
-        width: 60px;
+
         text-align: center;
     }
 

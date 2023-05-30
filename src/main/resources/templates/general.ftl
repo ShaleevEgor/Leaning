@@ -10,10 +10,10 @@
 </head>
 <body>
 <div class="header">
-    <a href="/"><div class="logo_text">Shaleev Practical</div></a>
-    <a href="/python"><div class="python">Python</div></a>
-    <a href="/java"><div class="java">Java</div></a>
-    <a href="/c"><div class="c">C++</div></a>
+    <a href="/"><div class="logo_text">Имя магазина</div></a>
+    <a href="/python"><div class="python">Компьютеры</div></a>
+    <a href="/java"><div class="java">Чайники</div></a>
+    <a href="/c"><div class="c">Холодильники</div></a>
     <#if user??><div class="cc"></div></#if>
 
     <#if !user??>
@@ -28,15 +28,9 @@
 
 </div>
 
-<div class="main">Доброго времени суток, мои юные baby-программисты! Я собрал все свои силы в свой маленький кулачок и решил скрафтить для вас небольшой ресурс с практическими задачами. На этом ресурсе вы найдете задания, направленные на практику и только практику.
-    Здесь вы получите необходимые навыки кодирования, необходимые для того, чтобы вам за это дали денежку и вы не померли с голоду, а просто напоминание моим ленивым жопкам, что различные продуктовые сети всегда нанимают вас на должность кассира.
-    Желаю тебе удачи и успехов на твоем пути, не расстраивайся если что-то не получается, всегда ищи другой способ "не открывают дверь, так лезь в окно", никто не говорит, что будет легко и просто. Не ищите легких путей, ведь это пути неудачников.
-    Если задание не получается, посмотрите на него с другой стороны, Разделите на маленькие пазлы и уничтожьте их один за другим! У Google есть все, вам просто нужно найти это!<br>
-    P.S Проект делал на своих хрупких коленках, так что не судите строго, если у вас есть свои идеи, пишите и мы их обязательно обсудим!</div>
-<div class="footer">
-    <div class="author"><a href="https://vk.com/shaleev2"  style="color:#FF0000" target="_blank">VK: Shaleev E.</a></div>
-</div>
-
+<div class="main">Приходите к нам на сайт бытовой техники и откройте свои глаза на мир современных технологий! Здесь вы найдете все, что нужно для комфорта и удобства быта – от электрочайников до холодильников и посудомоечных машин.
+    Наш каталог предлагает огромный выбор изделий лучших производителей по доступной цене, а удобный интерфейс позволит быстро и легко найти нужное вам устройство. Мы гарантируем качество и надежность нашей продукции, а также детальную консультацию и поддержку нашего специалистов.
+    Не теряйте время на долгие поиски в магазинах – выбирайте бытовую технику у нас на сайте и оставайтесь довольны своим выбором!</div>
 
 <style>
     body {
@@ -47,7 +41,7 @@
 
     .button_logout
     {
-        background-color: lightseagreen;
+        background-color: #EEE2DC;
         margin-left: 20px;
         margin-top: 8px;
         border: none;
@@ -63,7 +57,7 @@
 
     .header {
         display: flex;
-        background-color: lightseagreen;
+        background-color: #EEE2DC;
         width: 100%;
         height: 50px;
         border-radius: 3px;
@@ -71,12 +65,13 @@
     }
 
     .cc {
-        background-color: lightseagreen;
+        background-color: #EEE2DC;
         width: 770px;
         margin-top: 3px;
     }
 
     .name {
+        background-color: #EEE2DC;
         width: 150px;
         margin-left: 200px;
         text-align: center;
@@ -132,7 +127,7 @@
         font-style: italic;
         text-decoration: none;
         line-height: 50px;
-        width: 70px;
+
         text-align: center;
     }
 
@@ -142,12 +137,12 @@
         font-style: italic;
         text-decoration: none;
         line-height: 50px;
-        width: 60px;
+
         text-align: center;
     }
 
     .autorization {
-        margin-left: 550px;
+        margin-left: 530px;
         margin-right: 80px;
         font-size: 20px;
         font-style: italic;
@@ -172,7 +167,7 @@
         font-style: italic;
         text-decoration: none;
         line-height: 50px;
-        width: 60px;
+
         text-align: center;
     }
 

@@ -10,7 +10,7 @@ public class CplusKata {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     @Column(length = 2048)
-    private String text;
+    private String description;
     @Column(length = 2048)
     private String tag;
 
@@ -18,14 +18,19 @@ public class CplusKata {
     @JoinColumn(name = "user_id")
     private User author;
 
+    private String filename;
+
+
+
     public CplusKata() {
     }
 
-    public CplusKata(String text, String tag, User user) {
-        this.text = text;
+    public CplusKata(String description, String tag, User user) {
         this.tag = tag;
         this.author = user;
+        this.description = description;
     }
+
 
     public User getAuthor() {
         return author;
@@ -33,14 +38,6 @@ public class CplusKata {
 
     public void setAuthor(User author) {
         this.author = author;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getText() {
-        return text;
     }
 
     public Integer getId() {
@@ -58,5 +55,21 @@ public class CplusKata {
 
     public void setTag(String tag) {
         this.tag = tag;
+    }
+
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
